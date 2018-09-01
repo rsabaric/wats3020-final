@@ -3,7 +3,6 @@
 
 /* image event listener */
 
-//Browse through the image gallery and select the image to see destination information
 var galleryYes = document.getElementById("images");
 var galleryNo = document.getElementById("images2");
 var images = document.querySelectorAll('#theImg');
