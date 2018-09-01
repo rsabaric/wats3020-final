@@ -2,11 +2,23 @@
 /* Rosie Sabaric */
 
 /* image event listener */
-document.getElementById('theImg').addEventListener("click", displayModal);
+var images = document.querySelectorAll('#theImg');
+var modalImage= document.querySelector ('#theModal');
+console.log(modalImage);
+//document.getElementById('theImg').addEventListener("click", displayModal);
+var i;
+for (i = 0; i < images.length; i++) {
+    let click = i;
+   images[i].addEventListener("click", function(){
+       displayModal(click);
+   });
+}
 
-function displayModal() {
- console.log("peanut");  //* document.getElementById("demo").innerHTML = Date();
-  document.querySelector(".images").style.backgroundColor = "red";
+
+function displayModal(clicky) {
+ console.log(clicky);
+ //document.querySelector(".images").style.backgroundColor = "red";
+ console.log(images[clicky].src);
 }
 
 
