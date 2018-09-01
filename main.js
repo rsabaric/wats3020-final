@@ -12,7 +12,6 @@ var yesButton= document.querySelector('#Yes');
 var noButton= document.querySelector('#No');
 var h3Text = document.querySelector('h3');
 var pDirections = document.querySelector('#Directions');
-var buttonState = "sd";
 console.log(pDirections);
 var i;
 for (i = 0; i < images.length; i++) {
@@ -45,16 +44,15 @@ noButton.addEventListener("click", showGalleryNo);
 function showGalleryYes(){
     galleryYes.style.display = "unset";
     galleryNo.style.display = "none";
-    buttonState = "yes";
     h3Text.innerHTML= 'I thought so!';
-    pDirections.innerHTML= 'Browse through the image gallery and select the image to see destination information';
+    pDirections.innerHTML= 'Browse through the image gallery and select the image to begin planning!';
 }
 
 function showGalleryNo(){
     galleryNo.style.display = "unset";
     galleryYes.style.display = "none";
-    buttonState = "no";
     h3Text.innerHTML= 'Really!!?!';
+    pDirections.innerHTML= 'This is what you are looking forward to...';
 }
 
 
