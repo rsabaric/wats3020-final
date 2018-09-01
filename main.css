@@ -14,6 +14,13 @@ body {
     opacity: 0.9;   
 }
 
+#images {
+     display: none; /* Hidden by default */
+}
+#images2 {
+     display: none; /* Hidden by default */
+}
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
