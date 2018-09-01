@@ -3,36 +3,34 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
   <title>WATS 3020: Final</title>
   <meta name="description" content="WATS 3020 Final">
   <meta name="author" content="Rosie Sabaric">
 
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="main.css">
 
   <script src="js/dom-to-image.js"></script>
   <script src="js/main.js" defer></script>
 </head>
 
 <body>
-  <h1 id="brief-header">Some glimpses into top travel spots</h1>
-    <h3>Wish you were here</h3>
-    <p>Browse through the image gallery and select the image to see larger</p>
+<h1 id="brief-header">Some destinations top travel spots</h1>
+<h3>Wish you were here</h3>
+    <p>Browse through the image gallery and select the image to see destination information</p>
   <!-- Images contained within this element -->
-  <div class="images">
+<div class="images">
         <!--Begin listing images -->
-     
-        <label for="backgroundImage">Background</label>
-        <select name="backgroundImage">
-          <option value="test">dog</option>
-          <option value="test">fry</option>
-          <option value="test">heman</option>
-    
-        </select>
-      </p>
-      <p><input type="submit" value="Download Image"></p>
-    
-  </div>
+     <img id="theImg" src="images/beach.jpg" alt="Beach" style="width:100%;max-width:500px">
+     <img id="theImg" src="images/boat.jpg" alt="Beach" style="width:100%;max-width:500px">
+     <img id="theImg" src="images/waterfall.jpg" alt="Beach" style="width:100%;max-width:500px">
+   <!-- Increases the image size for destination information-->
+    <div id="theModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="">
+    <div id="caption"></div>
+    </div>
+</div>
 
   <div id="image-preview">
     <!-- Image Content Goes Here -->

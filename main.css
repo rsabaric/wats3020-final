@@ -1,1 +1,16 @@
 @CHARSET "UTF-8";
+
+body {
+    font-family: Helvetica, sans-serif;
+    }
+    
+#theImg {
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#theImg:hover {
+    opacity: 0.9;
+    
+}
