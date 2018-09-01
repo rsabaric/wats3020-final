@@ -14,11 +14,23 @@ for (i = 0; i < images.length; i++) {
    });
 }
 
-
 function displayModal(clicky) {
  console.log(clicky);
  //document.querySelector(".images").style.backgroundColor = "red";
- console.log(images[clicky].src);
+console.log(images[clicky].src);
+let clickModal = document.getElementById("selectedImage");
+console.log(clickModal);
+
+modalImage.style.display = "block";
+clickModal.src = images[clicky].src;
+//captionText.innerHTML = this.alt;
+}
+
+modalImage.addEventListener('click', hideModal);
+
+function hideModal(){
+    modalImage.style.display = "none";
+   
 }
 
 
