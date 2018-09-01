@@ -4,7 +4,7 @@
 /* image event listener */
 var images = document.querySelectorAll('#theImg');
 var modalImage= document.querySelector ('#theModal');
-console.log(modalImage);
+//console.log(modalImage);
 //document.getElementById('theImg').addEventListener("click", displayModal);
 var i;
 for (i = 0; i < images.length; i++) {
@@ -15,22 +15,22 @@ for (i = 0; i < images.length; i++) {
 }
 
 function displayModal(clicky) {
- console.log(clicky);
- //document.querySelector(".images").style.backgroundColor = "red";
-console.log(images[clicky].src);
+ //console.log(clicky);
+//console.log(images[clicky].src);
 let clickModal = document.getElementById("selectedImage");
-console.log(clickModal);
+//console.log(clickModal);
+let captionText = document.getElementById("caption");
+console.log(captionText);
 
 modalImage.style.display = "block";
 clickModal.src = images[clicky].src;
-//captionText.innerHTML = this.alt;
+captionText.innerHTML = images[clicky].alt;
 }
 
 modalImage.addEventListener('click', hideModal);
 
 function hideModal(){
-    modalImage.style.display = "none";
-   
+    modalImage.style.display = "none"; 
 }
 
 
