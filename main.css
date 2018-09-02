@@ -1,9 +1,16 @@
 @CHARSET "UTF-8";
 
+html {
+    background-image: url(images/watersky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 body {
     font-family: Helvetica, sans-serif;
     }
-    
+   
 #theImg {
     border-radius: 10px;
     cursor: pointer;
@@ -61,39 +68,45 @@ body {
 
 /*Button styling */
 #Go {
-    background-color: white; 
+    background-color: whitesmoke; 
     color: black; 
-    border: 1px solid #008CBA;
+    border: 1.5px solid #008CBA;
     transition-duration: 0.5s;
     border-radius:5px;
 }
 #Go:hover {
     background-color: #008CBA;
-    color: white;    
+    color: white;
+    border: 1.5px solid #008CBA;
+    border-radius:5px;
 }
 
 #Yes {
-    background-color: white; 
+    background-color: whitesmoke; 
     color: black; 
-    border: 1px solid #008CBA;
+    border: 1.5px solid #008CBA;
     transition-duration: 0.5s;
     border-radius:5px;
 }
 #Yes:hover {
     background-color: #008CBA;
-    color: white;    
+    border: 1.5px solid #008CBA;
+    color: white; 
+    border-radius:5px;
 }
 
 #No {
-    background-color: white; 
+    background-color: whitesmoke; 
     color: black; 
-    border: 1px solid #008CBA;
+    border: 1.5px solid #008CBA;
     transition-duration: 0.5s;
     border-radius:5px;
 }
 #No:hover {
     background-color: #008CBA;
-    color: white;    
+    color: white;
+    border-radius:5px;
+    border: 1.5px solid #008CBA;
 }
 
 
