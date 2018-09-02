@@ -1,8 +1,7 @@
 /*WATS 3020 Final*/
 /* Rosie Sabaric */
 
-/* image event listener */
-
+/*Defined variables */
 var galleryYes = document.getElementById("images");
 var galleryNo = document.getElementById("images2");
 var images = document.querySelectorAll('#theImg');
@@ -14,7 +13,7 @@ var pDirections = document.querySelector('#Directions');
 var fundsButton= document.getElementById("Go");
 var totalValue;
 var text;
-//console.log(pDirections);
+/*Set Modal Event Listeners*/;
 var i;
 for (i = 0; i < images.length; i++) {
     let click = i;
@@ -22,27 +21,24 @@ for (i = 0; i < images.length; i++) {
        displayModal(click);
    });
 }
-
-function displayModal(clicky) {
- //console.log(clicky);
-    //console.log(images[clicky].src);
+/* Function to unhide Modal and display with caption */
+function displayModal(clicky) { 
     let clickModal = document.getElementById("selectedImage");
-    //console.log(clickModal);
     let captionText = document.getElementById("caption");
     modalImage.style.display = "block";
     clickModal.src = images[clicky].src;
     captionText.innerHTML = images[clicky].alt;
 }
+    modalImage.addEventListener('click', hideModal);
 
-modalImage.addEventListener('click', hideModal);
-
+/* Hide Modal upon Click */
 function hideModal(){
     modalImage.style.display = "none"; 
 }
-
-yesButton.addEventListener("click", showGalleryYes);
-noButton.addEventListener("click", showGalleryNo);
-
+/* Set button event listeners for vacation yes or no */
+    yesButton.addEventListener("click", showGalleryYes);
+    noButton.addEventListener("click", showGalleryNo);
+/* Displays gallery for yes click */
 function showGalleryYes(){
     galleryYes.style.display = "unset";
     galleryNo.style.display = "none";
@@ -50,7 +46,7 @@ function showGalleryYes(){
     pDirections.innerHTML= 'Browse through the image gallery and select the image to get some ideas!';
     document.getElementById("tripfund").style.display = "unset";
 }
-
+/*Displays gallery for no click */
 function showGalleryNo(){
     galleryNo.style.display = "unset";
     galleryYes.style.display = "none";
@@ -58,11 +54,10 @@ function showGalleryNo(){
     pDirections.innerHTML= 'This is what you are looking forward to...';
     document.getElementById("tripfund").style.display = "unset";
 }
-
+/* Event listener and function for vacation fund calculater */
 fundsButton.addEventListener("click", fundsCalc);
 function fundsCalc (){
     totalValue = document.getElementById("vacationfund").value;
-    console.log(totalValue);
     if (isNaN(totalValue)){
         text = "You need to enter a valid number! I cannot help you if I do not know how much you have or do not have. Thank You!";
     } else if (totalValue===""){
