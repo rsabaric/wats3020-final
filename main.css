@@ -63,8 +63,9 @@ body {
 #Go {
     background-color: white; 
     color: black; 
-    border: 2px solid #008CBA;
+    border: 1px solid #008CBA;
     transition-duration: 0.5s;
+    border-radius:5px;
 }
 #Go:hover {
     background-color: #008CBA;
@@ -74,8 +75,9 @@ body {
 #Yes {
     background-color: white; 
     color: black; 
-    border: 2px solid #008CBA;
+    border: 1px solid #008CBA;
     transition-duration: 0.5s;
+    border-radius:5px;
 }
 #Yes:hover {
     background-color: #008CBA;
@@ -85,8 +87,9 @@ body {
 #No {
     background-color: white; 
     color: black; 
-    border: 2px solid #008CBA;
+    border: 1px solid #008CBA;
     transition-duration: 0.5s;
+    border-radius:5px;
 }
 #No:hover {
     background-color: #008CBA;
