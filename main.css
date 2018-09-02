@@ -59,5 +59,39 @@ body {
     display: none /* Hidden by default */
 }
 
+/*Button styling */
+#Go {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    transition-duration: 0.5s;
+}
+#Go:hover {
+    background-color: #008CBA;
+    color: white;    
+}
+
+#Yes {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    transition-duration: 0.5s;
+}
+#Yes:hover {
+    background-color: #008CBA;
+    color: white;    
+}
+
+#No {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    transition-duration: 0.5s;
+}
+#No:hover {
+    background-color: #008CBA;
+    color: white;    
+}
+
 
 
