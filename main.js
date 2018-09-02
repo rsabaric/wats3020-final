@@ -62,11 +62,13 @@ function fundsCalc (){
     totalValue = document.getElementById("vacationfund").value;
     console.log(totalValue);
     if (isNaN(totalValue)){
-        text = "You need to enter a valid number! I cannot help you if I don't know how much you have or do not have. Thank You!" 
+        text = "You need to enter a valid number! I cannot help you if I don't know how much you have or do not have. Thank You!";
+    } else if (totalValue===""){
+        text = "Please fill out the for with a valid number.";
     } else if (totalValue<0){
         text = "You are in debt, so please pay off your credit card.";
     } else if (totalValue>=0 && totalValue<200){
-        text = "You do not have quite enough for a big vacation, but your parents or grandparents would be happy to see you :)";
+        text = "$"+ totalValue + " is not quite enough for a big vacation, but your parents or grandparents would be happy to see you :)";
     } else if (totalValue>=200 && totalValue<1000){
         text = "You may consider somewhere local or in the off season.";
     } else {
