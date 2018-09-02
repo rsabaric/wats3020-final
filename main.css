@@ -55,5 +55,9 @@ body {
     height: 150px;
 }
 
+#tripfund {
+    display: none /* Hidden by default */
+}
+
 
 

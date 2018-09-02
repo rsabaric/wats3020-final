@@ -48,6 +48,7 @@ function showGalleryYes(){
     galleryNo.style.display = "none";
     h3Text.innerHTML= 'I thought so!';
     pDirections.innerHTML= 'Browse through the image gallery and select the image to get some ideas!';
+    document.getElementById("tripfund").style.display = "unset";
 }
 
 function showGalleryNo(){
@@ -55,6 +56,7 @@ function showGalleryNo(){
     galleryYes.style.display = "none";
     h3Text.innerHTML= 'Really!!?!';
     pDirections.innerHTML= 'This is what you are looking forward to...';
+    document.getElementById("tripfund").style.display = "unset";
 }
 
 fundsButton.addEventListener("click", fundsCalc);
@@ -70,9 +72,9 @@ function fundsCalc (){
     } else if (totalValue>=0 && totalValue<200){
         text = "$"+ totalValue + " is not quite enough for a big vacation, but your parents or grandparents would be happy to see you :)";
     } else if (totalValue>=200 && totalValue<1000){
-        text = "You may consider somewhere local or in the off season.";
+        text = "$"+ totalValue + " is enough to consider somewhere local or in the off season.";
     } else {
-        text = "You can go anywhere!";
+        text = "$"+ totalValue + " is enough to go anywhere!";
     }
     document.getElementById("fund").innerHTML = text;
 }
